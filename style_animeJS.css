@@ -1,0 +1,25 @@
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: violet;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.square p {
+    padding: auto 0;
+}
+
+.square2 {
+    height: 60px;
+    width: 300px;
+    background-color: brown;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    color: lightgrey;
+}
+
+.square2 p {
+    padding: auto 0;
+}
