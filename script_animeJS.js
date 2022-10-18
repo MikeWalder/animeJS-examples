@@ -20,3 +20,17 @@ anime({
     direction: 'alternate',
     loop: true
 });
+
+const formBuild = document.querySelector('#formBuild');
+console.log(formBuild);
+
+formBuild.addEventListener('click', disappearForm());
+
+function disappearForm(){
+    anime({
+        targets: '#formBuild',
+        translateX: 250,
+        duration: 3500,
+        direction: 'alternate'
+    });
+}
