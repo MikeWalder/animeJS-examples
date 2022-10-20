@@ -1,36 +1,35 @@
 anime({
     targets: '.square',
     translateX: 400,
-    translateY: 350,
+    //translateY: 350,
     rotateZ: 2160,
-    scale: 3.5,
-    duration: 3500,
-    easing: 'steps(150)',
+    scale: 2.5,
+    duration: 3000,
+    easing: 'steps(550)',
     borderRadius: ['0%', '50%'],
     direction: 'alternate',
-    loop: true
+    loop: false
 });
 
 anime({
     targets: '.square2',
     translateX: 550,
-    rotateZ: 360,
-    scale: 2.2, 
-    duration: 5000,
+    scale: 2.0, 
+    duration: 1000,
+    easing: 'easeInOutSine',
     direction: 'alternate',
-    loop: true
+    loop: false
 });
 
 const formBuild = document.querySelector('#formBuild');
-console.log(formBuild);
-
 formBuild.addEventListener('click', disappearForm());
 
 function disappearForm(){
     anime({
         targets: '#formBuild',
         translateX: 250,
-        duration: 3500,
-        direction: 'alternate'
+        duration: 1000,
+        direction: 'alternate',
+        loop: false
     });
 }
